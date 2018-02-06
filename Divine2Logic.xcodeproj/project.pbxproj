@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1869F47C202982E60031FB48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F47B202982E60031FB48 /* AppDelegate.m */; };
+		1869F47F202982E60031FB48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F47E202982E60031FB48 /* ViewController.m */; };
+		1869F482202982E60031FB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869F480202982E60031FB48 /* Main.storyboard */; };
+		1869F484202982E60031FB48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1869F483202982E60031FB48 /* Assets.xcassets */; };
+		1869F487202982E60031FB48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869F485202982E60031FB48 /* LaunchScreen.storyboard */; };
+		1869F48A202982E60031FB48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F489202982E60031FB48 /* main.m */; };
+		1869F494202982E60031FB48 /* Divine2LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F493202982E60031FB48 /* Divine2LogicTests.m */; };
+		1869F49F202982E60031FB48 /* Divine2LogicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F49E202982E60031FB48 /* Divine2LogicUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1869F490202982E60031FB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1869F46F202982E60031FB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1869F476202982E60031FB48;
+			remoteInfo = Divine2Logic;
+		};
+		1869F49B202982E60031FB48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1869F46F202982E60031FB48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1869F476202982E60031FB48;
+			remoteInfo = Divine2Logic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1869F477202982E60031FB48 /* Divine2Logic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divine2Logic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1869F47A202982E60031FB48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1869F47B202982E60031FB48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1869F47D202982E60031FB48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1869F47E202982E60031FB48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1869F481202982E60031FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1869F483202982E60031FB48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1869F486202982E60031FB48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1869F488202982E60031FB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869F489202982E60031FB48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1869F48F202982E60031FB48 /* Divine2LogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Divine2LogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1869F493202982E60031FB48 /* Divine2LogicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Divine2LogicTests.m; sourceTree = "<group>"; };
+		1869F495202982E60031FB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869F49A202982E60031FB48 /* Divine2LogicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Divine2LogicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1869F49E202982E60031FB48 /* Divine2LogicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Divine2LogicUITests.m; sourceTree = "<group>"; };
+		1869F4A0202982E60031FB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1869F474202982E60031FB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F48C202982E60031FB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F497202982E60031FB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1869F46E202982E60031FB48 = {
+			isa = PBXGroup;
+			children = (
+				1869F479202982E60031FB48 /* Divine2Logic */,
+				1869F492202982E60031FB48 /* Divine2LogicTests */,
+				1869F49D202982E60031FB48 /* Divine2LogicUITests */,
+				1869F478202982E60031FB48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1869F478202982E60031FB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1869F477202982E60031FB48 /* Divine2Logic.app */,
+				1869F48F202982E60031FB48 /* Divine2LogicTests.xctest */,
+				1869F49A202982E60031FB48 /* Divine2LogicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1869F479202982E60031FB48 /* Divine2Logic */ = {
+			isa = PBXGroup;
+			children = (
+				1869F47A202982E60031FB48 /* AppDelegate.h */,
+				1869F47B202982E60031FB48 /* AppDelegate.m */,
+				1869F47D202982E60031FB48 /* ViewController.h */,
+				1869F47E202982E60031FB48 /* ViewController.m */,
+				1869F480202982E60031FB48 /* Main.storyboard */,
+				1869F483202982E60031FB48 /* Assets.xcassets */,
+				1869F485202982E60031FB48 /* LaunchScreen.storyboard */,
+				1869F488202982E60031FB48 /* Info.plist */,
+				1869F489202982E60031FB48 /* main.m */,
+			);
+			path = Divine2Logic;
+			sourceTree = "<group>";
+		};
+		1869F492202982E60031FB48 /* Divine2LogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				1869F493202982E60031FB48 /* Divine2LogicTests.m */,
+				1869F495202982E60031FB48 /* Info.plist */,
+			);
+			path = Divine2LogicTests;
+			sourceTree = "<group>";
+		};
+		1869F49D202982E60031FB48 /* Divine2LogicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1869F49E202982E60031FB48 /* Divine2LogicUITests.m */,
+				1869F4A0202982E60031FB48 /* Info.plist */,
+			);
+			path = Divine2LogicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1869F476202982E60031FB48 /* Divine2Logic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1869F4A3202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2Logic" */;
+			buildPhases = (
+				1869F473202982E60031FB48 /* Sources */,
+				1869F474202982E60031FB48 /* Frameworks */,
+				1869F475202982E60031FB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Divine2Logic;
+			productName = Divine2Logic;
+			productReference = 1869F477202982E60031FB48 /* Divine2Logic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1869F48E202982E60031FB48 /* Divine2LogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1869F4A6202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2LogicTests" */;
+			buildPhases = (
+				1869F48B202982E60031FB48 /* Sources */,
+				1869F48C202982E60031FB48 /* Frameworks */,
+				1869F48D202982E60031FB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1869F491202982E60031FB48 /* PBXTargetDependency */,
+			);
+			name = Divine2LogicTests;
+			productName = Divine2LogicTests;
+			productReference = 1869F48F202982E60031FB48 /* Divine2LogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1869F499202982E60031FB48 /* Divine2LogicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1869F4A9202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2LogicUITests" */;
+			buildPhases = (
+				1869F496202982E60031FB48 /* Sources */,
+				1869F497202982E60031FB48 /* Frameworks */,
+				1869F498202982E60031FB48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1869F49C202982E60031FB48 /* PBXTargetDependency */,
+			);
+			name = Divine2LogicUITests;
+			productName = Divine2LogicUITests;
+			productReference = 1869F49A202982E60031FB48 /* Divine2LogicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1869F46F202982E60031FB48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Rtstl;
+				TargetAttributes = {
+					1869F476202982E60031FB48 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1869F48E202982E60031FB48 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1869F476202982E60031FB48;
+					};
+					1869F499202982E60031FB48 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1869F476202982E60031FB48;
+					};
+				};
+			};
+			buildConfigurationList = 1869F472202982E60031FB48 /* Build configuration list for PBXProject "Divine2Logic" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1869F46E202982E60031FB48;
+			productRefGroup = 1869F478202982E60031FB48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1869F476202982E60031FB48 /* Divine2Logic */,
+				1869F48E202982E60031FB48 /* Divine2LogicTests */,
+				1869F499202982E60031FB48 /* Divine2LogicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1869F475202982E60031FB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1869F487202982E60031FB48 /* LaunchScreen.storyboard in Resources */,
+				1869F484202982E60031FB48 /* Assets.xcassets in Resources */,
+				1869F482202982E60031FB48 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F48D202982E60031FB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F498202982E60031FB48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1869F473202982E60031FB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1869F47F202982E60031FB48 /* ViewController.m in Sources */,
+				1869F48A202982E60031FB48 /* main.m in Sources */,
+				1869F47C202982E60031FB48 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F48B202982E60031FB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1869F494202982E60031FB48 /* Divine2LogicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1869F496202982E60031FB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1869F49F202982E60031FB48 /* Divine2LogicUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1869F491202982E60031FB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1869F476202982E60031FB48 /* Divine2Logic */;
+			targetProxy = 1869F490202982E60031FB48 /* PBXContainerItemProxy */;
+		};
+		1869F49C202982E60031FB48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1869F476202982E60031FB48 /* Divine2Logic */;
+			targetProxy = 1869F49B202982E60031FB48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1869F480202982E60031FB48 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1869F481202982E60031FB48 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1869F485202982E60031FB48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1869F486202982E60031FB48 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1869F4A1202982E60031FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1869F4A2202982E60031FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1869F4A4202982E60031FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2Logic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2Logic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1869F4A5202982E60031FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2Logic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2Logic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1869F4A7202982E60031FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2LogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Divine2Logic.app/Divine2Logic";
+			};
+			name = Debug;
+		};
+		1869F4A8202982E60031FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2LogicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2LogicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Divine2Logic.app/Divine2Logic";
+			};
+			name = Release;
+		};
+		1869F4AA202982E60031FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2LogicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2LogicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Divine2Logic;
+			};
+			name = Debug;
+		};
+		1869F4AB202982E60031FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMTWU377P3;
+				INFOPLIST_FILE = Divine2LogicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2LogicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Divine2Logic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1869F472202982E60031FB48 /* Build configuration list for PBXProject "Divine2Logic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1869F4A1202982E60031FB48 /* Debug */,
+				1869F4A2202982E60031FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1869F4A3202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2Logic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1869F4A4202982E60031FB48 /* Debug */,
+				1869F4A5202982E60031FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1869F4A6202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2LogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1869F4A7202982E60031FB48 /* Debug */,
+				1869F4A8202982E60031FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1869F4A9202982E60031FB48 /* Build configuration list for PBXNativeTarget "Divine2LogicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1869F4AA202982E60031FB48 /* Debug */,
+				1869F4AB202982E60031FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1869F46F202982E60031FB48 /* Project object */;
+}
