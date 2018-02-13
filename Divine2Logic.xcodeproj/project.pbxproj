@@ -15,6 +15,25 @@
 		1869F48A202982E60031FB48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F489202982E60031FB48 /* main.m */; };
 		1869F494202982E60031FB48 /* Divine2LogicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F493202982E60031FB48 /* Divine2LogicTests.m */; };
 		1869F49F202982E60031FB48 /* Divine2LogicUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F49E202982E60031FB48 /* Divine2LogicUITests.m */; };
+		1869F4B320298D5B0031FB48 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F4B220298D5B0031FB48 /* LoginViewController.m */; };
+		1869F4C22029C64A0031FB48 /* ForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F4C12029C64A0031FB48 /* ForgotPasswordViewController.m */; };
+		1869F4C52029C6610031FB48 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F4C42029C6610031FB48 /* RegistrationViewController.m */; };
+		18F00286202C49A000FABCC4 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F00285202C49A000FABCC4 /* DashboardViewController.m */; };
+		18F0028D202C4ECA00FABCC4 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F0028C202C4ECA00FABCC4 /* ProfileViewController.m */; };
+		18F00291202C6BFC00FABCC4 /* CartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F00290202C6BFC00FABCC4 /* CartViewController.m */; };
+		18F151D8203166860012F585 /* ProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F151D7203166860012F585 /* ProfileTableViewCell.m */; };
+		18F301C7202D72EE00A96C68 /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B1202D72EE00A96C68 /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301C8202D72EE00A96C68 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B2202D72EE00A96C68 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301C9202D72EE00A96C68 /* ASIHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B3202D72EE00A96C68 /* ASIHTTPRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CA202D72EE00A96C68 /* ASIFormDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B6202D72EE00A96C68 /* ASIFormDataRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CB202D72EE00A96C68 /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B8202D72EE00A96C68 /* ASIDataDecompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CC202D72EE00A96C68 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301B9202D72EE00A96C68 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CD202D72EE00A96C68 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301BA202D72EE00A96C68 /* ASIInputStream.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CE202D72EE00A96C68 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301C2202D72EE00A96C68 /* ASINetworkQueue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301CF202D72EE00A96C68 /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301C4202D72EE00A96C68 /* ASIDownloadCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F301D6202D731D00A96C68 /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301D0202D731C00A96C68 /* AsyncImageView.m */; };
+		18F301D7202D731D00A96C68 /* GlobalStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301D1202D731C00A96C68 /* GlobalStore.m */; };
+		18F301D8202D731D00A96C68 /* MMCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F301D4202D731C00A96C68 /* MMCommon.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +70,48 @@
 		1869F49A202982E60031FB48 /* Divine2LogicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Divine2LogicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1869F49E202982E60031FB48 /* Divine2LogicUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Divine2LogicUITests.m; sourceTree = "<group>"; };
 		1869F4A0202982E60031FB48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1869F4B120298D5B0031FB48 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		1869F4B220298D5B0031FB48 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		1869F4C02029C64A0031FB48 /* ForgotPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForgotPasswordViewController.h; sourceTree = "<group>"; };
+		1869F4C12029C64A0031FB48 /* ForgotPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgotPasswordViewController.m; sourceTree = "<group>"; };
+		1869F4C32029C6610031FB48 /* RegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		1869F4C42029C6610031FB48 /* RegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		18F00284202C49A000FABCC4 /* DashboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		18F00285202C49A000FABCC4 /* DashboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		18F0028B202C4ECA00FABCC4 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		18F0028C202C4ECA00FABCC4 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		18F0028F202C6BFC00FABCC4 /* CartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CartViewController.h; sourceTree = "<group>"; };
+		18F00290202C6BFC00FABCC4 /* CartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartViewController.m; sourceTree = "<group>"; };
+		18F151D6203166860012F585 /* ProfileTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewCell.h; sourceTree = "<group>"; };
+		18F151D7203166860012F585 /* ProfileTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewCell.m; sourceTree = "<group>"; };
+		18F301B1202D72EE00A96C68 /* ASIDataCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataCompressor.m; sourceTree = "<group>"; };
+		18F301B2202D72EE00A96C68 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		18F301B3202D72EE00A96C68 /* ASIHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIHTTPRequest.m; sourceTree = "<group>"; };
+		18F301B4202D72EE00A96C68 /* ASIHTTPRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestDelegate.h; sourceTree = "<group>"; };
+		18F301B5202D72EE00A96C68 /* ASINetworkQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASINetworkQueue.h; sourceTree = "<group>"; };
+		18F301B6202D72EE00A96C68 /* ASIFormDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIFormDataRequest.m; sourceTree = "<group>"; };
+		18F301B7202D72EE00A96C68 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
+		18F301B8202D72EE00A96C68 /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
+		18F301B9202D72EE00A96C68 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
+		18F301BA202D72EE00A96C68 /* ASIInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIInputStream.m; sourceTree = "<group>"; };
+		18F301BB202D72EE00A96C68 /* ASIDownloadCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDownloadCache.h; sourceTree = "<group>"; };
+		18F301BC202D72EE00A96C68 /* ASIHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequest.h; sourceTree = "<group>"; };
+		18F301BD202D72EE00A96C68 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
+		18F301BE202D72EE00A96C68 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		18F301BF202D72EE00A96C68 /* ASIDataCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataCompressor.h; sourceTree = "<group>"; };
+		18F301C0202D72EE00A96C68 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
+		18F301C1202D72EE00A96C68 /* ASIFormDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIFormDataRequest.h; sourceTree = "<group>"; };
+		18F301C2202D72EE00A96C68 /* ASINetworkQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASINetworkQueue.m; sourceTree = "<group>"; };
+		18F301C3202D72EE00A96C68 /* ASIDataDecompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIDataDecompressor.h; sourceTree = "<group>"; };
+		18F301C4202D72EE00A96C68 /* ASIDownloadCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDownloadCache.m; sourceTree = "<group>"; };
+		18F301C5202D72EE00A96C68 /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
+		18F301C6202D72EE00A96C68 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
+		18F301D0202D731C00A96C68 /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		18F301D1202D731C00A96C68 /* GlobalStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalStore.m; sourceTree = "<group>"; };
+		18F301D2202D731C00A96C68 /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		18F301D3202D731C00A96C68 /* MMCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCommon.h; sourceTree = "<group>"; };
+		18F301D4202D731C00A96C68 /* MMCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCommon.m; sourceTree = "<group>"; };
+		18F301D5202D731C00A96C68 /* GlobalStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalStore.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +162,31 @@
 		1869F479202982E60031FB48 /* Divine2Logic */ = {
 			isa = PBXGroup;
 			children = (
+				18F301B0202D72EE00A96C68 /* ASIHttpClasses */,
 				1869F47A202982E60031FB48 /* AppDelegate.h */,
 				1869F47B202982E60031FB48 /* AppDelegate.m */,
+				18F301D2202D731C00A96C68 /* AsyncImageView.h */,
+				18F301D0202D731C00A96C68 /* AsyncImageView.m */,
+				18F301D5202D731C00A96C68 /* GlobalStore.h */,
+				18F301D1202D731C00A96C68 /* GlobalStore.m */,
+				18F301D3202D731C00A96C68 /* MMCommon.h */,
+				18F301D4202D731C00A96C68 /* MMCommon.m */,
 				1869F47D202982E60031FB48 /* ViewController.h */,
 				1869F47E202982E60031FB48 /* ViewController.m */,
+				1869F4B120298D5B0031FB48 /* LoginViewController.h */,
+				1869F4B220298D5B0031FB48 /* LoginViewController.m */,
+				1869F4C02029C64A0031FB48 /* ForgotPasswordViewController.h */,
+				1869F4C12029C64A0031FB48 /* ForgotPasswordViewController.m */,
+				1869F4C32029C6610031FB48 /* RegistrationViewController.h */,
+				1869F4C42029C6610031FB48 /* RegistrationViewController.m */,
+				18F00284202C49A000FABCC4 /* DashboardViewController.h */,
+				18F00285202C49A000FABCC4 /* DashboardViewController.m */,
+				18F0028B202C4ECA00FABCC4 /* ProfileViewController.h */,
+				18F0028C202C4ECA00FABCC4 /* ProfileViewController.m */,
+				18F151D6203166860012F585 /* ProfileTableViewCell.h */,
+				18F151D7203166860012F585 /* ProfileTableViewCell.m */,
+				18F0028F202C6BFC00FABCC4 /* CartViewController.h */,
+				18F00290202C6BFC00FABCC4 /* CartViewController.m */,
 				1869F480202982E60031FB48 /* Main.storyboard */,
 				1869F483202982E60031FB48 /* Assets.xcassets */,
 				1869F485202982E60031FB48 /* LaunchScreen.storyboard */,
@@ -130,6 +212,35 @@
 				1869F4A0202982E60031FB48 /* Info.plist */,
 			);
 			path = Divine2LogicUITests;
+			sourceTree = "<group>";
+		};
+		18F301B0202D72EE00A96C68 /* ASIHttpClasses */ = {
+			isa = PBXGroup;
+			children = (
+				18F301B1202D72EE00A96C68 /* ASIDataCompressor.m */,
+				18F301B2202D72EE00A96C68 /* Reachability.m */,
+				18F301B3202D72EE00A96C68 /* ASIHTTPRequest.m */,
+				18F301B4202D72EE00A96C68 /* ASIHTTPRequestDelegate.h */,
+				18F301B5202D72EE00A96C68 /* ASINetworkQueue.h */,
+				18F301B6202D72EE00A96C68 /* ASIFormDataRequest.m */,
+				18F301B7202D72EE00A96C68 /* ASIHTTPRequestConfig.h */,
+				18F301B8202D72EE00A96C68 /* ASIDataDecompressor.m */,
+				18F301B9202D72EE00A96C68 /* ASIAuthenticationDialog.m */,
+				18F301BA202D72EE00A96C68 /* ASIInputStream.m */,
+				18F301BB202D72EE00A96C68 /* ASIDownloadCache.h */,
+				18F301BC202D72EE00A96C68 /* ASIHTTPRequest.h */,
+				18F301BD202D72EE00A96C68 /* ASICacheDelegate.h */,
+				18F301BE202D72EE00A96C68 /* Reachability.h */,
+				18F301BF202D72EE00A96C68 /* ASIDataCompressor.h */,
+				18F301C0202D72EE00A96C68 /* ASIProgressDelegate.h */,
+				18F301C1202D72EE00A96C68 /* ASIFormDataRequest.h */,
+				18F301C2202D72EE00A96C68 /* ASINetworkQueue.m */,
+				18F301C3202D72EE00A96C68 /* ASIDataDecompressor.h */,
+				18F301C4202D72EE00A96C68 /* ASIDownloadCache.m */,
+				18F301C5202D72EE00A96C68 /* ASIInputStream.h */,
+				18F301C6202D72EE00A96C68 /* ASIAuthenticationDialog.h */,
+			);
+			path = ASIHttpClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +376,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F301C7202D72EE00A96C68 /* ASIDataCompressor.m in Sources */,
+				1869F4B320298D5B0031FB48 /* LoginViewController.m in Sources */,
+				18F301CA202D72EE00A96C68 /* ASIFormDataRequest.m in Sources */,
+				18F151D8203166860012F585 /* ProfileTableViewCell.m in Sources */,
+				1869F4C52029C6610031FB48 /* RegistrationViewController.m in Sources */,
+				18F301CD202D72EE00A96C68 /* ASIInputStream.m in Sources */,
+				18F301C8202D72EE00A96C68 /* Reachability.m in Sources */,
+				18F301D8202D731D00A96C68 /* MMCommon.m in Sources */,
+				18F301D7202D731D00A96C68 /* GlobalStore.m in Sources */,
+				18F0028D202C4ECA00FABCC4 /* ProfileViewController.m in Sources */,
+				18F301C9202D72EE00A96C68 /* ASIHTTPRequest.m in Sources */,
+				18F301CC202D72EE00A96C68 /* ASIAuthenticationDialog.m in Sources */,
 				1869F47F202982E60031FB48 /* ViewController.m in Sources */,
+				18F00286202C49A000FABCC4 /* DashboardViewController.m in Sources */,
 				1869F48A202982E60031FB48 /* main.m in Sources */,
+				18F301D6202D731D00A96C68 /* AsyncImageView.m in Sources */,
+				1869F4C22029C64A0031FB48 /* ForgotPasswordViewController.m in Sources */,
+				18F301CB202D72EE00A96C68 /* ASIDataDecompressor.m in Sources */,
+				18F301CF202D72EE00A96C68 /* ASIDownloadCache.m in Sources */,
+				18F00291202C6BFC00FABCC4 /* CartViewController.m in Sources */,
+				18F301CE202D72EE00A96C68 /* ASINetworkQueue.m in Sources */,
 				1869F47C202982E60031FB48 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,13 +560,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMTWU377P3;
 				INFOPLIST_FILE = Divine2Logic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2Logic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -444,13 +577,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LMTWU377P3;
 				INFOPLIST_FILE = Divine2Logic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rtstl.Divine2Logic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

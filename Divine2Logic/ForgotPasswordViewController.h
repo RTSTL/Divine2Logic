@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ForgotPasswordViewController.h
 //  Divine2Logic
 //
 //  Created by Apple on 06/02/18.
@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MMCommon.h"
 
-@interface ViewController : UIViewController
+@interface ForgotPasswordViewController : UIViewController
 
 @end
-

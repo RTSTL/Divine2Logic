@@ -17,8 +17,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+//    [MMCommon showOnlyAlert:@"Sorry!" :@"Password Required" :self.navigationController];
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    
+    [NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(login) userInfo:nil repeats:NO];
+}
+
+-(void)login
+{
+    UIViewController *viewcontroller =(UIViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+
+    [self.navigationController pushViewController:viewcontroller animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
