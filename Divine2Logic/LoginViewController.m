@@ -23,6 +23,8 @@
     
     [userID setValue:[UIColor lightGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
     [password setValue:[UIColor lightGrayColor] forKeyPath:@"_placeholderLabel.textColor"];
+    
+    userInfo = [GlobalStore getInstance];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -61,11 +63,91 @@
 
 - (IBAction)loginCallBack:(id)sender {
     
-    UITabBarController *dashboard =(UITabBarController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabbar"];
+    [userID resignFirstResponder];
+    [password resignFirstResponder];
     
-    [self.navigationController pushViewController:dashboard animated:YES];
+    if(![[MMCommon sharedInstance] isNullString:userID.text])
+    {
+        if(![[MMCommon  sharedInstance] isNullString:password.text])
+        {
+            [containerScrollView setContentOffset:CGPointMake(0.0, 00) animated:YES];
+            [self performRequestForLogIn];
+        }
+        else{
+            [MMCommon showOnlyAlert:@"Sorry!" :@"Password Required":self.navigationController];
+        }
+    }
+    else
+    {
+        [MMCommon showOnlyAlert:@"Sorry!" :@"Enter UserID":self.navigationController];
+    }
 }
 
+#pragma mark-Call Api For LogIn
+
+-(void)performRequestForLogIn
+{
+    if([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable)
+    {
+        [MMCommon showOnlyAlert:@"Sorry!" :@"Check Your Internet Connection.":self.navigationController];
+    }
+    else{
+        [[MMCommon sharedInstance] showfullScreenIndicator:YES animated:YES];
+        
+        NSString *requestStr = @"User/Login";
+        
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",BASE_URL,requestStr]]];
+        
+        request.delegate=self;
+        [request setUseSessionPersistence:NO];
+        
+        [request addPostValue:@"cypher007" forKey:@"member_id"];
+        [request addPostValue:@"12345678" forKey:@"password"];
+        [request addPostValue:@"abc" forKey:@"device_id"];
+        [request addPostValue:@"1" forKey:@"device_token"];
+        
+        [request startAsynchronous];
+    }
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSLog(@"%@",request.responseString);
+    
+    loginJson = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingAllowFragments error:nil];
+    
+    if ([[loginJson valueForKey:@"status"] intValue] == 1)
+    {
+        [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+        
+        NSMutableArray *personal = [[NSMutableArray alloc]init];
+        personal = [loginJson objectForKey:@"user"];
+        
+        userInfo.id_enc = [[personal valueForKey:@"id_enc"] objectAtIndex:0];
+        userInfo.member_id = [[personal valueForKey:@"member_id"] objectAtIndex:0];
+        userInfo.member_type = [[personal valueForKey:@"member_typ"] objectAtIndex:0];
+        userInfo.name = [[personal valueForKey:@"name"] objectAtIndex:0];
+        userInfo.org_mem_id = [[personal valueForKey:@"org_mem_id"] objectAtIndex:0];
+        
+        userID.text=@"";
+        password.text=@"";
+        
+        UITabBarController *dashboard =(UITabBarController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabbar"];
+        
+        [self.navigationController pushViewController:dashboard animated:YES];
+    }
+    else
+    {
+        [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+        [MMCommon showOnlyAlert:@"Sorry!" :[loginJson valueForKey:@"message"]:self.navigationController];
+    }
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+    [MMCommon showOnlyAlert:@"Sorry!" :@"Something Went Wrong.":self.navigationController];
+}
 
 /*
 #pragma mark - Navigation

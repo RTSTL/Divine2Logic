@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMCommon.h"
+#import "ASIFormDataRequest.h"
+#import "Reachability.h"
+#import "ResetPasswordViewController.h"
 
 @interface ForgotPasswordViewController : UIViewController
-
+{
+    NSDictionary *forgetPasswdJson;
+    
+    IBOutlet UIScrollView *containerScroll;
+    IBOutlet UIView *containerView;
+    IBOutlet UITextField *mobileTxtFld;
+    
+}
 @end

@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MMCommon.h"
+#import "ASIFormDataRequest.h"
+#import "Reachability.h"
+#import "ConfirmRegistrationViewController.h"
+#import "GlobalStore.h"
 
 @interface RegistrationViewController : UIViewController
 {
+    NSMutableArray *initialArray, *genderArray;
+    NSDictionary *responseJson;
+    UIDatePicker *datePicker;
+    NSString *initialTag, *genderTag;
+    GlobalStore *userInfo;
+    
     IBOutlet UIScrollView *mainContainerScroll;
     IBOutlet UIScrollView *fieldContainerScroll;
     IBOutlet UIView *containerView;
@@ -17,6 +28,7 @@
     IBOutlet UITextField *firstName;
     IBOutlet UITextField *lastName;
     IBOutlet UITextField *dateOfBirth;
+    IBOutlet UITextField *gender;
     IBOutlet UITextField *email;
     IBOutlet UITextField *mobileNo;
     IBOutlet UITextField *userName;

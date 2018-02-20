@@ -9,8 +9,8 @@
 //#import "UITextView+Placeholder.h"
 #import <MessageUI/MessageUI.h>
 
-#define BASE_URL @"http://snappysg.com/api/"
-#define IMAGE_BASE_URL @"http://snappysg.com/"
+//#define BASE_URL @"http://192.168.100.254/Divine2LogicApi/"
+#define BASE_URL @"http://223.31.109.234/Divine2LogicApi/"
 
 #define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 #define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)

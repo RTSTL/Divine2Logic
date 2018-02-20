@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self performRequestForDashboardItem];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +35,89 @@
     // Pass the selected object to the new view controller.
 }
 */
+#pragma mark-Table Implementation
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+
+{
+    return [categoryArray count];
+}
+
+-(CategoryListingTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier=@"CategoryListing";
+    
+    CategoryListingTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier ];
+    
+    if (cell == nil) {
+        cell = [[CategoryListingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    NSString *prependStr = [NSString stringWithFormat:@"data:image/png;base64,%@",[[categoryArray objectAtIndex:indexPath.row] valueForKey:@"pic_content"]];
+    NSURL *url = [NSURL URLWithString:prependStr];
+    NSData *imageData = [NSData dataWithContentsOfURL:url];
+    UIImage *ret = [UIImage imageWithData:imageData];
+    
+    cell.categoryImageView.image = ret;
+    cell.categoryTitle.text = [[categoryArray objectAtIndex:indexPath.row] valueForKey:@"itemtype_nm"];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
+#pragma mark- API Integration
+
+-(void)performRequestForDashboardItem
+{
+    if([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == NotReachable)
+    {
+        [MMCommon showOnlyAlert:@"Sorry!" :@"Check Your Internet Connection.":self.navigationController];
+    }
+    else{
+        [[MMCommon sharedInstance] showfullScreenIndicator:YES animated:YES];
+        
+        NSString *requestStr = @"MSItemType/GetMSItemType";
+        
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",BASE_URL,requestStr]]];
+        
+        request.delegate=self;
+        [request setUseSessionPersistence:NO];
+        
+        [request addPostValue:@"" forKey:@"itemtype_id_enc"];
+        
+        [request startAsynchronous];
+    }
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSLog(@"%@",request.responseString);
+    
+    dashboardJson = [NSJSONSerialization JSONObjectWithData:request.responseData options:NSJSONReadingAllowFragments error:nil];
+    
+    if ([[dashboardJson valueForKey:@"status"] intValue] == 1)
+    {
+        [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+        
+        categoryArray = [[NSMutableArray alloc]init];
+        categoryArray = [dashboardJson objectForKey:@"list"];
+        
+        [categoryTableView reloadData];
+    }
+    else
+    {
+        [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+        [MMCommon showOnlyAlert:@"Sorry!" :[dashboardJson valueForKey:@"message"]:self.navigationController];
+    }
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+    [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
+    [MMCommon showOnlyAlert:@"Sorry!" :@"Something Went Wrong.":self.navigationController];
+}
 
 @end

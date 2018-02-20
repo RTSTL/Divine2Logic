@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1802142F203BEB1F00E909E7 /* ConfirmRegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1802142E203BEB1F00E909E7 /* ConfirmRegistrationViewController.m */; };
+		18021432203C46F100E909E7 /* CategoryListingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18021431203C46F100E909E7 /* CategoryListingTableViewCell.m */; };
+		181D9BE320354AAF008A78F2 /* ResetPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D9BE220354AAF008A78F2 /* ResetPasswordViewController.m */; };
 		1869F47C202982E60031FB48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F47B202982E60031FB48 /* AppDelegate.m */; };
 		1869F47F202982E60031FB48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1869F47E202982E60031FB48 /* ViewController.m */; };
 		1869F482202982E60031FB48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1869F480202982E60031FB48 /* Main.storyboard */; };
@@ -54,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1802142D203BEB1F00E909E7 /* ConfirmRegistrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConfirmRegistrationViewController.h; sourceTree = "<group>"; };
+		1802142E203BEB1F00E909E7 /* ConfirmRegistrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfirmRegistrationViewController.m; sourceTree = "<group>"; };
+		18021430203C46F100E909E7 /* CategoryListingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryListingTableViewCell.h; sourceTree = "<group>"; };
+		18021431203C46F100E909E7 /* CategoryListingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryListingTableViewCell.m; sourceTree = "<group>"; };
+		181D9BE120354AAF008A78F2 /* ResetPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResetPasswordViewController.h; sourceTree = "<group>"; };
+		181D9BE220354AAF008A78F2 /* ResetPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResetPasswordViewController.m; sourceTree = "<group>"; };
 		1869F477202982E60031FB48 /* Divine2Logic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divine2Logic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1869F47A202982E60031FB48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1869F47B202982E60031FB48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -177,10 +186,16 @@
 				1869F4B220298D5B0031FB48 /* LoginViewController.m */,
 				1869F4C02029C64A0031FB48 /* ForgotPasswordViewController.h */,
 				1869F4C12029C64A0031FB48 /* ForgotPasswordViewController.m */,
+				181D9BE120354AAF008A78F2 /* ResetPasswordViewController.h */,
+				181D9BE220354AAF008A78F2 /* ResetPasswordViewController.m */,
 				1869F4C32029C6610031FB48 /* RegistrationViewController.h */,
 				1869F4C42029C6610031FB48 /* RegistrationViewController.m */,
+				1802142D203BEB1F00E909E7 /* ConfirmRegistrationViewController.h */,
+				1802142E203BEB1F00E909E7 /* ConfirmRegistrationViewController.m */,
 				18F00284202C49A000FABCC4 /* DashboardViewController.h */,
 				18F00285202C49A000FABCC4 /* DashboardViewController.m */,
+				18021430203C46F100E909E7 /* CategoryListingTableViewCell.h */,
+				18021431203C46F100E909E7 /* CategoryListingTableViewCell.m */,
 				18F0028B202C4ECA00FABCC4 /* ProfileViewController.h */,
 				18F0028C202C4ECA00FABCC4 /* ProfileViewController.m */,
 				18F151D6203166860012F585 /* ProfileTableViewCell.h */,
@@ -381,9 +396,11 @@
 				18F301CA202D72EE00A96C68 /* ASIFormDataRequest.m in Sources */,
 				18F151D8203166860012F585 /* ProfileTableViewCell.m in Sources */,
 				1869F4C52029C6610031FB48 /* RegistrationViewController.m in Sources */,
+				181D9BE320354AAF008A78F2 /* ResetPasswordViewController.m in Sources */,
 				18F301CD202D72EE00A96C68 /* ASIInputStream.m in Sources */,
 				18F301C8202D72EE00A96C68 /* Reachability.m in Sources */,
 				18F301D8202D731D00A96C68 /* MMCommon.m in Sources */,
+				18021432203C46F100E909E7 /* CategoryListingTableViewCell.m in Sources */,
 				18F301D7202D731D00A96C68 /* GlobalStore.m in Sources */,
 				18F0028D202C4ECA00FABCC4 /* ProfileViewController.m in Sources */,
 				18F301C9202D72EE00A96C68 /* ASIHTTPRequest.m in Sources */,
@@ -397,6 +414,7 @@
 				18F301CF202D72EE00A96C68 /* ASIDownloadCache.m in Sources */,
 				18F00291202C6BFC00FABCC4 /* CartViewController.m in Sources */,
 				18F301CE202D72EE00A96C68 /* ASINetworkQueue.m in Sources */,
+				1802142F203BEB1F00E909E7 /* ConfirmRegistrationViewController.m in Sources */,
 				1869F47C202982E60031FB48 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,7 @@
 //  Snappy
 //
 //  Created by USER on 10/08/16.
-//  Copyright © 2016 Intersoft. All rights reserved.
+//  Copyright © 2016 Arindam. All rights reserved.
 //
 
 #import "GlobalStore.h"
