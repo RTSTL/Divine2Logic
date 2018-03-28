@@ -102,8 +102,8 @@
         [request setUseSessionPersistence:NO];
         
         [request addPostValue:@"cypher007" forKey:@"member_id"];
-        [request addPostValue:@"12345678" forKey:@"password"];
-        [request addPostValue:@"abc" forKey:@"device_id"];
+        [request addPostValue:@"Sa123456" forKey:@"password"];
+        [request addPostValue:VENDOR_UUID forKey:@"device_id"];
         [request addPostValue:@"1" forKey:@"device_token"];
         
         [request startAsynchronous];
@@ -123,11 +123,23 @@
         NSMutableArray *personal = [[NSMutableArray alloc]init];
         personal = [loginJson objectForKey:@"user"];
         
-        userInfo.id_enc = [[personal valueForKey:@"id_enc"] objectAtIndex:0];
-        userInfo.member_id = [[personal valueForKey:@"member_id"] objectAtIndex:0];
-        userInfo.member_type = [[personal valueForKey:@"member_typ"] objectAtIndex:0];
-        userInfo.name = [[personal valueForKey:@"name"] objectAtIndex:0];
-        userInfo.org_mem_id = [[personal valueForKey:@"org_mem_id"] objectAtIndex:0];
+//        userInfo.id_enc = [[personal valueForKey:@"id_enc"] objectAtIndex:0];
+//        userInfo.member_id = [[personal valueForKey:@"member_id"] objectAtIndex:0];
+//        userInfo.member_type = [[personal valueForKey:@"member_typ"] objectAtIndex:0];
+//        userInfo.name = [[personal valueForKey:@"name"] objectAtIndex:0];
+//        userInfo.org_mem_id = [[personal valueForKey:@"org_mem_id"] objectAtIndex:0];
+//        
+        [KFKeychain saveObject:[[personal valueForKey:@"id_enc"] objectAtIndex:0] forKey:@"id_enc"];
+        [KFKeychain saveObject:[[personal valueForKey:@"member_id"] objectAtIndex:0] forKey:@"member_id"];
+        [KFKeychain saveObject:[[personal valueForKey:@"member_type"] objectAtIndex:0] forKey:@"member_type"];
+        [KFKeychain saveObject:[[personal valueForKey:@"name"] objectAtIndex:0] forKey:@"name"];
+        [KFKeychain saveObject:[[personal valueForKey:@"org_mem_id"] objectAtIndex:0] forKey:@"org_mem_id"];
+        [KFKeychain saveObject:[[personal valueForKey:@"pic_id"] objectAtIndex:0] forKey:@"pic_id"];
+
+        
+        
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"logged_in"];
+
         
         userID.text=@"";
         password.text=@"";

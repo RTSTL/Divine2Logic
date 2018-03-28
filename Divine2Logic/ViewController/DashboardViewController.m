@@ -17,8 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    userInfo=[GlobalStore getInstance];
+    
+    userInfo.id_enc = [KFKeychain loadObjectForKey:@"id_enc"];;
+    userInfo.member_id = [KFKeychain loadObjectForKey:@"id_enc"];
+    userInfo.member_type = [KFKeychain loadObjectForKey:@"id_enc"];
+    userInfo.name = [KFKeychain loadObjectForKey:@"id_enc"];
+    userInfo.org_mem_id = [KFKeychain loadObjectForKey:@"id_enc"];
+    userInfo.pic_id = [KFKeychain loadObjectForKey:@"pic_id"];
+
+    
     
     [self performRequestForDashboardItem];
+    categoryTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,6 +72,7 @@
     
     cell.categoryImageView.image = ret;
     cell.categoryTitle.text = [[categoryArray objectAtIndex:indexPath.row] valueForKey:@"itemtype_nm"];
+    cell.selectionStyle=UITableViewCellSelectionStyleNone;
     return cell;
 }
 

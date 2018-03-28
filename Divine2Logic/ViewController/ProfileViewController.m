@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    userInfo = [GlobalStore getInstance];
+
+    
+    ProfileImageView.layer.cornerRadius=ProfileImageView.frame.size.width/2.0;
+    ProfileImageView.clipsToBounds=YES;
+    
     firstSectionItem = [NSArray arrayWithObjects:@"My Orders", @"Delivery Address", nil];
     secondSectionItem = [NSArray arrayWithObjects:@"Wallet", @"Transaction Details", @"Saved Cards", nil];
     thirdSectionItem = [NSArray arrayWithObjects:@"Change Password", nil];
@@ -32,6 +38,16 @@
     [logOut setFrame:CGRectMake(X_Co, 5, 250, 35)];
     [btnContainer addSubview:logOut];
     [profileTable setTableFooterView:btnContainer];
+}
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+    [[SDImageCache sharedImageCache]clearMemory];
+    [[SDImageCache sharedImageCache]clearDisk];
+    NSString *ImageURL = [NSString stringWithFormat:@"%@ProfilePicture/%@",BASE_URL,userInfo.pic_id];
+    [ProfileImageView sd_setImageWithURL:[NSURL URLWithString:ImageURL]];
+     
 }
 
 - (void)didReceiveMemoryWarning {

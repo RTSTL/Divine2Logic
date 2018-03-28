@@ -11,11 +11,13 @@
 #import "ASIFormDataRequest.h"
 #import "Reachability.h"
 #import "CategoryListingTableViewCell.h"
+#import "GlobalStore.h"
 
 @interface DashboardViewController : UIViewController
 {
     NSDictionary *dashboardJson;
     NSMutableArray *categoryArray;
     IBOutlet UITableView *categoryTableView;
+    GlobalStore *userInfo;
 }
 @end

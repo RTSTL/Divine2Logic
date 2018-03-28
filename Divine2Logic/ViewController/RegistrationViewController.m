@@ -297,8 +297,10 @@
             
             for (int i = 0; i<tempInitialArray.count; i++) {
                 NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
-                [dict setValue:[[tempInitialArray valueForKey:@"sys_val_id"] objectAtIndex:i] forKey:@"initilID"];
-                [dict setValue:[[tempInitialArray valueForKey:@"sys_value"] objectAtIndex:i] forKey:@"initialValue"];
+                
+                [dict setValue:[[tempInitialArray objectAtIndex:i] valueForKey:@"sys_val_id"] forKey:@"initilID"];
+                [dict setValue:[[tempInitialArray objectAtIndex:i] valueForKey:@"sys_value"] forKey:@"initialValue"];
+                
                 [initialArray addObject:dict];
             }
         }
@@ -319,8 +321,10 @@
             
             for (int i = 0; i<tempGenderArray.count; i++) {
                 NSMutableDictionary *dictGender = [[NSMutableDictionary alloc] init];
-                [dictGender setValue:[[tempGenderArray valueForKey:@"sys_val_id"] objectAtIndex:i] forKey:@"initilID"];
-                [dictGender setValue:[[tempGenderArray valueForKey:@"sys_value"] objectAtIndex:i] forKey:@"initialValue"];
+                
+                [dictGender setValue:[[tempGenderArray objectAtIndex:i] valueForKey:@"sys_val_id"] forKey:@"initilID"];
+                [dictGender setValue:[[tempGenderArray objectAtIndex:i] valueForKey:@"sys_value"] forKey:@"initialValue"];
+                
                 [genderArray addObject:dictGender];
             }
         }
@@ -335,11 +339,12 @@
         if ([[responseJson valueForKey:@"status"] intValue] == 1)
         {
             [[MMCommon sharedInstance] showfullScreenIndicator:NO animated:YES];
-                        
+            
             userInfo.id_enc = [responseJson valueForKey:@"dbresponse"];
             
             ConfirmRegistrationViewController *confRegistration =(ConfirmRegistrationViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"ConfirmRegistrationViewController"];
             [self.navigationController pushViewController:confRegistration animated:YES];
+            
         }
         else
         {

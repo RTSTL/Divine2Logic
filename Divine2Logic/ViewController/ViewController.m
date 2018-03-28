@@ -28,10 +28,22 @@
 
 -(void)login
 {
-    UIViewController *viewcontroller =(UIViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-
-    [self.navigationController pushViewController:viewcontroller animated:YES];
+    if([[NSUserDefaults standardUserDefaults]boolForKey:@"logged_in"])
+    {
+        UITabBarController *dashboard =(UITabBarController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabbar"];
+        
+        [self.navigationController pushViewController:dashboard animated:YES];
+    }
+    else{
+        UIViewController *viewcontroller =(UIViewController *)[self.storyboard instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        
+        [self.navigationController pushViewController:viewcontroller animated:YES];
+    }
+  
 }
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -231,6 +231,17 @@
             userInfo.member_type = [[personal valueForKey:@"member_typ"] objectAtIndex:0];
             userInfo.name = [[personal valueForKey:@"name"] objectAtIndex:0];
             userInfo.org_mem_id = [[personal valueForKey:@"org_mem_id"] objectAtIndex:0];
+            
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Thank You" message:@"Your Registration is Successfull" preferredStyle:UIAlertControllerStyleAlert];
+            
+            UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action)
+                                 {
+                                     UITabBarController *dashboard =(UITabBarController *)[self.storyboard instantiateViewControllerWithIdentifier:@"mainTabbar"];
+                                     
+                                     [self.navigationController pushViewController:dashboard animated:YES];
+                                 }];
+            [alert addAction:ok];
+            [self presentViewController:alert animated:YES completion:nil];
         }
         else
         {

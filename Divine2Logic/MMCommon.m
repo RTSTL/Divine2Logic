@@ -48,6 +48,14 @@
     return [emailTest evaluateWithObject:candidate];
     
 }
+- (BOOL) validateFieldRegex:(NSString *) regex :(NSString *) value
+{
+    NSString *emailRegex =regex;
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    
+    return [emailTest evaluateWithObject:value];
+    
+}
 
 +(void) showOnlyAlert:(NSString*)title :(NSString*)message :(UIViewController*)viewController
 {

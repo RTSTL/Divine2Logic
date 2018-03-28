@@ -8,6 +8,8 @@
 //#import "UIImage+animatedGIF.h"
 //#import "UITextView+Placeholder.h"
 #import <MessageUI/MessageUI.h>
+#import "KFKeychain.h"
+#import "VendorID.h"
 
 //#define BASE_URL @"http://192.168.100.254/Divine2LogicApi/"
 #define BASE_URL @"http://223.31.109.234/Divine2LogicApi/"
@@ -31,6 +33,8 @@
 +(void) showOnlyAlert:(NSString*)title :(NSString*)message :(UIViewController*)viewController;
 -(BOOL)isNullString:(NSString*)_inputString;
 - (BOOL) validateEmail: (NSString *) candidate;
+- (BOOL) validateFieldRegex:(NSString *) regex :(NSString *) value;
+
 - (BOOL) validateUen: (NSString *) candidate;
 - (BOOL) validateNum: (NSString *) candidate;
 - (BOOL) PostalNum: (NSString *) candidate;

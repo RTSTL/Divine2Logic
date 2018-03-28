@@ -17,6 +17,8 @@
 @property(nonatomic,strong)	NSString *member_type;
 @property(nonatomic,strong)	NSString *name;
 @property(nonatomic,strong)	NSString *org_mem_id;
+@property(nonatomic,strong) NSString *pic_id;
+
 
 +(GlobalStore*)getInstance;
 
